@@ -1,0 +1,114 @@
+Build a modern, professional developer portfolio website using Next.js 15 with JavaScript and Tailwind CSS. This is for a full-stack developer job search.
+
+DESIGN DIRECTION:
+- Clean, minimal, professional vibe (not startup flashy)
+- Dark slate/charcoal background (#1a1a1a or #2c3e50) with off-white text (#f8f7f5)
+- One accent color: steel blue (#2563eb) or deep teal (#0d9488) for links/highlights
+- Sans-serif typography (use system fonts or Inter from Google Fonts)
+- Generous whitespace, breathing room between sections
+- NO animations or flashy effects—keep it subtle and professional
+
+SITE STRUCTURE:
+
+1. HERO SECTION
+   - Layout: Split 60/40 (text left, visual right on desktop; stacked on mobile)
+   - Headline: "Full-Stack Developer | Agency Experience | Hands-On Builder"
+   - Subheader: "I build web platforms and solve technical problems at scale. Currently exploring remote opportunities."
+   - CTA button: "View My Work" (smooth scroll to projects section)
+   - Visual Element (RIGHT SIDE):
+     * Geometric/structural pattern: Animated minimal grid or circuit board pattern (light blue/teal lines on dark background)
+     * Keep it subtle and precision-based (shows attention to detail + system thinking)
+     * Add minimal interactivity: Particles or dots that respond to mouse hover or scroll (subtle, not distracting)
+     * Use CSS animations or simple canvas/SVG (keep performance fast)
+     * Should feel like network/data flow, not chaotic
+
+2. ABOUT SECTION
+   - Brief bio (2-3 sentences): "I'm a full-stack developer with 3+ years of agency experience building platforms for enterprise clients. I specialize in Drupal, React, PHP, and modern web architecture. Also a veteran in the Air National Guard."
+   - Key highlights (as simple text or small badge cards):
+     * Full-Stack Web Development
+     * Drupal & Custom Modules
+     * API Integration & Backend Performance
+     * Hands-On Problem Solver
+   - Military badge: Display "USAF Reserve" or similar with a small icon/badge styling
+   - Tech stack badges (small pills): Drupal, React, PHP, JavaScript, Node.js, Laravel, MySQL, AWS
+
+3. PROJECTS/WORK SECTION
+   - Title: "Selected Work"
+   - Create project cards in a grid (3 columns on desktop, 1 on mobile)
+   - Each card should show:
+     * Project title
+     * Industry/category (e.g., "Enterprise Web", "SaaS Platform", "Content Management")
+     * Brief description (1-2 sentences)
+     * Tech stack (as small badge pills)
+     * "View Details" button → opens a modal
+   
+   PROJECTS TO DISPLAY (with generic descriptions since case studies coming soon):
+   
+   Card 1: "Enterprise Drupal Platform"
+   - Industry: Enterprise Web
+   - Description: "Built and maintained custom Drupal modules for enterprise clients. Handled form management, user authentication, and performance optimization across multiple high-traffic sites."
+   - Tech: Drupal, PHP, PostgreSQL, JavaScript
+   
+   Card 2: "SCORM Training Platform"
+   - Industry: E-Learning
+   - Description: "Developed interactive training platform with quiz validation, user progress tracking, and SCORM compliance. Implemented custom form workflows and data persistence."
+   - Tech: Drupal, JavaScript, MySQL, Custom Modules
+   
+   Card 3: "React Web Applications"
+   - Industry: Frontend Development
+   - Description: "Built responsive, component-based interfaces using React and modern JavaScript. Integrated with backend APIs and optimized for performance."
+   - Tech: React, JavaScript, CSS3, API Integration
+   
+   Card 4: "WordPress & Custom Themes"
+   - Industry: Web Development
+   - Description: "Designed and developed multiple WordPress sites with custom themes, plugins, and integrations. Focused on performance, SEO, and user experience."
+   - Tech: WordPress, PHP, JavaScript, MySQL
+   
+   Card 5: "Backend API Development"
+   - Industry: Systems Architecture
+   - Description: "Built and optimized backend services, including data validation, third-party integrations, and performance enhancements. Experience with relational databases and API design."
+   - Tech: Node.js, PHP, Laravel, MySQL, PostgreSQL
+
+4. PROJECT MODAL (on click of card)
+   - Show project title and description
+   - Status message: "Case study coming soon. Check back for screenshots and detailed breakdown."
+   - X button to close
+   - Don't overcomplicate—simple modal, clean layout
+
+5. CONTACT FORM SECTION
+   - Title: "Get In Touch"
+   - Subheader: "Have a project in mind? Let's talk."
+   - Form fields:
+     * Name (required)
+     * Email (required)
+     * Message (textarea, required)
+   - Submit button: "Send Message"
+   - Use Formspree for form handling: https://formspree.io/
+   - On submit, show success message: "Thanks for reaching out! I'll get back to you soon."
+
+6. FOOTER
+   - Brief copyright: "© 2026 Leo Afonso"
+   - Links: GitHub, LinkedIn (add these with social icons)
+   - Optional: "Built with Next.js & deployed on Vercel"
+
+TECHNICAL REQUIREMENTS:
+- Use Next.js 15 App Router
+- Tailwind CSS for styling
+- Responsive design (mobile-first approach)
+- Smooth scroll behavior for anchor links
+- Form submission via Formspree (no backend needed)
+- Fast load times, accessible (semantic HTML, ARIA labels where needed)
+- Minimal but intentional animations (geometric pattern + hover interactions)
+- Keep performance fast—no heavy animations
+
+DEPLOYMENT:
+- Set up to deploy on Vercel (auto-deploy on GitHub push)
+- Custom domain: devleoafonso.com (configure DNS after deployment)
+
+TONE:
+- Professional but approachable
+- Confident, not arrogant
+- Technical but clear
+- No jargon overload
+
+Start with the basic structure and styling. Make it clean and fast. The geometric hero visual should show attention to detail and design thinking while staying minimal and professional. This is for job search, so credibility and clarity matter more than flashiness.
