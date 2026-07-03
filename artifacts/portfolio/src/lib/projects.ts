@@ -8,38 +8,24 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    id: "enterprise-drupal",
-    title: "Enterprise Drupal Platform",
-    category: "Enterprise Web",
-    description: "Built and maintained custom Drupal modules for enterprise clients. Handled form management, user authentication, and performance optimization across multiple high-traffic sites.",
-    tech: ["Drupal", "PHP", "PostgreSQL", "JavaScript"]
+    id: "full-stack",
+    title: "Full Stack Development",
+    category: "Full Stack Development",
+    description: "Custom full-stack solutions combining React frontends with robust PHP/Node.js backends. End-to-end application development with performance and scalability in mind.",
+    tech: ["React", "PHP", "Node.js", "JavaScript", "MySQL", "PostgreSQL", "API Design"]
   },
   {
-    id: "scorm-training",
-    title: "SCORM Training Platform",
-    category: "E-Learning",
-    description: "Developed interactive training platform with quiz validation, user progress tracking, and SCORM compliance. Implemented custom form workflows and data persistence.",
-    tech: ["Drupal", "JavaScript", "MySQL", "Custom Modules"]
+    id: "drupal",
+    title: "Drupal Development",
+    category: "Drupal Specialization",
+    description: "Expert custom Drupal module development, form management, user authentication systems, and performance optimization for enterprise-scale platforms.",
+    tech: ["Drupal", "PHP", "PostgreSQL", "JavaScript", "Custom Modules", "SCORM Compliance"]
   },
   {
-    id: "react-apps",
-    title: "React Web Applications",
-    category: "Frontend Development",
-    description: "Built responsive, component-based interfaces using React and modern JavaScript. Integrated with backend APIs and optimized for performance.",
-    tech: ["React", "JavaScript", "CSS3", "API Integration"]
-  },
-  {
-    id: "wordpress-themes",
-    title: "WordPress & Custom Themes",
-    category: "Web Development",
-    description: "Designed and developed multiple WordPress sites with custom themes, plugins, and integrations. Focused on performance, SEO, and user experience.",
-    tech: ["WordPress", "PHP", "JavaScript", "MySQL"]
-  },
-  {
-    id: "backend-api",
-    title: "Backend API Development",
-    category: "Systems Architecture",
-    description: "Built and optimized backend services, including data validation, third-party integrations, and performance enhancements. Experience with relational databases and API design.",
-    tech: ["Node.js", "PHP", "Laravel", "MySQL", "PostgreSQL"]
+    id: "wordpress",
+    title: "WordPress Development",
+    category: "WordPress & Web Solutions",
+    description: "Custom WordPress theme design and development, plugin integration, performance tuning, and SEO optimization for high-traffic sites.",
+    tech: ["WordPress", "PHP", "JavaScript", "MySQL", "Custom Themes", "SEO"]
   }
 ];

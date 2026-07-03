@@ -1,12 +1,11 @@
 import React from 'react';
-import { ShieldCheck } from 'lucide-react';
 
 export default function About() {
   const highlights = [
-    "Full-Stack Web Development",
-    "Drupal & Custom Modules",
-    "API Integration & Backend Performance",
-    "Hands-On Problem Solver"
+    { title: "System Architecture & Design", description: "Design scalable web systems, database architecture, technical planning" },
+    { title: "Performance & Optimization", description: "API optimization, load performance, code efficiency, SEO implementation" },
+    { title: "DevOps & Tooling", description: "Git/GitHub workflows, Docker containerization, CI/CD pipelines, Agile/Scrum" },
+    { title: "API & Backend Integration", description: "Third-party integrations, data transformation, backend services, RESTful design" },
   ];
 
   const techStack = [
@@ -24,13 +23,8 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed font-normal">
-              I'm a full-stack developer with 3+ years of agency experience building platforms for enterprise clients. I specialize in Drupal, React, PHP, and modern web architecture. Also a veteran in the Air National Guard.
+              Full-stack developer with 3+ years of agency experience building custom web platforms for enterprise clients. I specialize in Drupal architecture, React, and PHP backend development. Active member of the U.S. Air National Guard.
             </p>
-            
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-amber-400/40 bg-amber-50 text-amber-700 text-sm font-medium" data-testid="badge-military">
-              <ShieldCheck className="w-4 h-4" />
-              USAF Reserve
-            </div>
 
             <div className="pt-4">
               <h3 className="text-sm font-semibold uppercase tracking-wider text-foreground mb-4">Core Tech Stack</h3>
@@ -58,7 +52,8 @@ export default function About() {
                 <div className="w-8 h-8 rounded bg-primary/15 flex items-center justify-center text-amber-700 font-bold text-sm mb-3">
                   0{index + 1}
                 </div>
-                <h3 className="font-semibold text-foreground text-sm leading-snug">{highlight}</h3>
+                <h3 className="font-semibold text-foreground text-sm leading-snug mb-1.5">{highlight.title}</h3>
+                <p className="text-xs text-muted-foreground leading-relaxed">{highlight.description}</p>
               </div>
             ))}
           </div>

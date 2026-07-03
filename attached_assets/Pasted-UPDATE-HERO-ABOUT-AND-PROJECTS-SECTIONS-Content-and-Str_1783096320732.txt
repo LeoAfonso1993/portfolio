@@ -1,0 +1,57 @@
+UPDATE HERO, ABOUT, AND PROJECTS SECTIONS - Content and Structure
+
+HERO SECTION:
+- Headline: "Full-Stack Developer. Agency experience building platforms for enterprise clients."
+- Subheader: "I specialize in custom web development, Drupal architecture, and full-stack problem solving. Open to remote, hybrid, and on-site roles."
+- Keep the geometric interactive animation (covers 50-75% of width, goes behind text)
+- Keep the "Available for Remote Work" badge
+
+ABOUT SECTION - BIO:
+Replace the current bio with:
+"Full-stack developer with 3+ years of agency experience building custom web platforms for enterprise clients. I specialize in Drupal architecture, React, and PHP backend development. Active member of the U.S. Air National Guard."
+
+REMOVE the USAF Reserve badge - it doesn't belong and creates confusion.
+
+ABOUT SECTION - SKILLS CARDS:
+Replace all 4 cards with these (keep same layout/styling, just update content):
+
+Card 1:
+- Number: 01
+- Title: System Architecture & Design
+- Description: Design scalable web systems, database architecture, technical planning
+
+Card 2:
+- Number: 02
+- Title: Performance & Optimization
+- Description: API optimization, load performance, code efficiency, SEO implementation
+
+Card 3:
+- Number: 03
+- Title: DevOps & Tooling
+- Description: Git/GitHub workflows, Docker containerization, CI/CD pipelines, Agile/Scrum
+
+Card 4:
+- Number: 04
+- Title: API & Backend Integration
+- Description: Third-party integrations, data transformation, backend services, RESTful design
+
+SELECTED WORK / PROJECTS SECTION:
+- Keep the same card layout and styling
+- Reorganize into 3 project categories instead of 5:
+
+Card 1: Full Stack Development
+- Category: Full Stack Development
+- Description: Custom full-stack solutions combining React frontends with robust PHP/Node.js backends. End-to-end application development with performance and scalability in mind.
+- Tech: React, PHP, Node.js, JavaScript, MySQL, PostgreSQL, API Design
+
+Card 2: Drupal Development
+- Category: Drupal Specialization
+- Description: Expert custom Drupal module development, form management, user authentication systems, and performance optimization for enterprise-scale platforms.
+- Tech: Drupal, PHP, PostgreSQL, JavaScript, Custom Modules, SCORM Compliance
+
+Card 3: WordPress Development
+- Category: WordPress & Web Solutions
+- Description: Custom WordPress theme design and development, plugin integration, performance tuning, and SEO optimization for high-traffic sites.
+- Tech: WordPress, PHP, JavaScript, MySQL, Custom Themes, SEO
+
+Keep all other design elements the same. These changes are purely content updates to make the portfolio more authentic and less duplicative.

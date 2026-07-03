@@ -17,13 +17,12 @@ export default function Hero() {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight">
-            Full-Stack Developer <br className="hidden lg:block"/>
-            <span className="text-muted-foreground font-light">|</span> Agency Experience <br className="hidden lg:block"/>
-            <span className="text-muted-foreground font-light">|</span> Hands-On Builder
+            Full-Stack Developer. <br className="hidden lg:block"/>
+            <span className="text-foreground/80 font-normal text-3xl md:text-4xl lg:text-5xl">Agency experience building platforms for enterprise clients.</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl font-normal leading-relaxed">
-            I build web platforms and solve technical problems at scale. Currently exploring remote opportunities.
+            I specialize in custom web development, Drupal architecture, and full-stack problem solving. Open to remote, hybrid, and on-site roles.
           </p>
           
           <div className="pt-4">
