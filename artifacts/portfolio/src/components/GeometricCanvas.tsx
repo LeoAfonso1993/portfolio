@@ -146,22 +146,16 @@ export default function GeometricCanvas() {
       mouse.y = e.clientY - rect.top;
     };
 
-    const handleMouseLeave = () => {
-      mouse.x = -1000;
-      mouse.y = -1000;
-    };
-
+    // Listen on window so interaction works even when the canvas is pointer-events:none
     window.addEventListener('resize', resize);
-    canvas.addEventListener('mousemove', handleMouseMove);
-    canvas.addEventListener('mouseleave', handleMouseLeave);
+    window.addEventListener('mousemove', handleMouseMove);
 
     resize();
     animationFrameId = requestAnimationFrame(draw);
 
     return () => {
       window.removeEventListener('resize', resize);
-      canvas.removeEventListener('mousemove', handleMouseMove);
-      canvas.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener('mousemove', handleMouseMove);
       cancelAnimationFrame(animationFrameId);
     };
   }, []);

@@ -9,7 +9,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="py-24 bg-background">
-      <div className="container mx-auto px-6 max-w-6xl">
+      <div className="container mx-auto px-6 max-w-5xl">
         <div className="mb-12">
           <h2 className="text-3xl font-bold tracking-tight text-foreground">Selected Work</h2>
           <div className="w-12 h-1 bg-primary mt-4 rounded-full"></div>
