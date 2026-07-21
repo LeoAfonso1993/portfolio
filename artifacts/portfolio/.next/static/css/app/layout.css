@@ -695,6 +695,9 @@ h1, h2, h3, h4, h5, h6 {
 .h-full{
   height: 100%;
 }
+.h-10{
+  height: 2.5rem;
+}
 .min-h-\[100dvh\]{
   min-height: 100dvh;
 }
@@ -721,6 +724,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .w-full{
   width: 100%;
+}
+.w-10{
+  width: 2.5rem;
 }
 .max-w-2xl{
   max-width: 42rem;

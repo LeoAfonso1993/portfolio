@@ -1,15 +1,48 @@
 import React from 'react';
+import {
+  Server,
+  Gauge,
+  Workflow,
+  Plug,
+} from "lucide-react";
 
 export default function About() {
   const highlights = [
-    { title: "System Architecture & Design", description: "Design scalable web systems, database architecture, technical planning" },
-    { title: "Performance & Optimization", description: "API optimization, load performance, code efficiency, SEO implementation" },
-    { title: "DevOps & Tooling", description: "Git/GitHub workflows, Docker containerization, CI/CD pipelines, Agile/Scrum" },
-    { title: "API & Backend Integration", description: "Third-party integrations, data transformation, backend services, RESTful design" },
-  ];
+  {
+    title: "Backend Development",
+    description:
+      "Building scalable PHP applications, designing APIs, and structuring maintainable backend systems.",
+    icon: Server,
+  },
+  {
+    title: "Performance & Optimization",
+    description:
+      "Improving application performance, debugging production issues, optimizing databases, and delivering reliable software.",
+    icon: Gauge,
+  },
+  {
+    title: "Modern Development",
+    description:
+      "Git workflows, Docker, CI/CD, Agile collaboration, and production-ready development practices.",
+    icon: Workflow,
+  },
+  {
+    title: "API Integrations",
+    description:
+      "Connecting third-party services, REST APIs, authentication, and backend data synchronization.",
+    icon: Plug,
+  },
+];
 
   const techStack = [
-    "Drupal", "React", "PHP", "JavaScript", "Node.js", "Laravel", "MySQL", "AWS"
+    "PHP",
+    "JavaScript",
+    "Laravel",
+    "React",
+    "Drupal",
+    "MySQL",
+    "Docker",
+    "Git"
   ];
 
   return (
@@ -23,7 +56,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <p className="text-lg text-muted-foreground leading-relaxed font-normal">
-              Full-stack developer with 3+ years of agency experience building custom web platforms for enterprise clients. I specialize in Drupal architecture, React, and PHP backend development. Active member of the U.S. Air National Guard.
+              I'm a full-stack developer with 3+ years of experience building and maintaining production software for enterprise organizations. I've worked across Drupal, Laravel, React, and custom PHP applications, helping clients modernize platforms, solve complex technical challenges, and deliver reliable software. Outside of development, I serve in the U.S. Air National Guard, where I've strengthened the discipline and problem-solving mindset I bring to every project.
             </p>
 
             <div className="pt-4">
@@ -43,19 +76,29 @@ export default function About() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 h-fit">
-            {highlights.map((highlight, index) => (
-              <div 
-                key={index}
-                className="p-5 rounded-lg bg-white border border-border shadow-sm hover:border-primary/50 hover:shadow-md transition-all"
-                data-testid={`highlight-card-${index}`}
-              >
-                <div className="w-8 h-8 rounded bg-primary/15 flex items-center justify-center text-amber-700 font-bold text-sm mb-3">
-                  0{index + 1}
+            {highlights.map((highlight, index) => {
+              const Icon = highlight.icon;
+
+              return (
+                <div
+                  key={index}
+                  className="p-5 rounded-lg bg-white border border-border shadow-sm hover:border-primary/50 hover:shadow-md transition-all"
+                  data-testid={`highlight-card-${index}`}
+                >
+                  <div className="w-10 h-10 rounded-lg bg-primary/15 flex items-center justify-center text-amber-700 mb-4">
+                    <Icon className="w-5 h-5" />
+                  </div>
+
+                  <h3 className="font-semibold text-foreground text-sm leading-snug mb-2">
+                    {highlight.title}
+                  </h3>
+
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {highlight.description}
+                  </p>
                 </div>
-                <h3 className="font-semibold text-foreground text-sm leading-snug mb-1.5">{highlight.title}</h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">{highlight.description}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

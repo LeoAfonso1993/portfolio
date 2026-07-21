@@ -25,20 +25,19 @@ export default function Hero() {
             className="inline-flex items-center px-3 py-1 rounded-full border border-primary/40 bg-primary/10 text-amber-700 text-xs font-semibold uppercase tracking-wider"
             data-testid="badge-availability"
           >
-            Available for Remote Work
+            AVAILABLE FOR REMOTE • HYBRID • ON-SITE
           </div>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground leading-tight">
             Full-Stack Developer.{' '}
             <br className="hidden lg:block" />
             <span className="text-foreground/80 font-normal text-3xl md:text-4xl lg:text-5xl">
-              Agency experience building platforms for enterprise clients.
+              Turning complex business problems into reliable software.
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-xl font-normal leading-relaxed">
-            I specialize in custom web development, Drupal architecture, and full-stack problem solving.
-            Open to remote, hybrid, and on-site roles.
+            I develop scalable web applications with PHP, JavaScript, Drupal, Laravel, and modern development practices—from architecture to deployment.
           </p>
 
           <div className="pt-4">
